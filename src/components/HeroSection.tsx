@@ -7,8 +7,8 @@ const HeroSection = () => {
       {/* Background image with watermark effect */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-          alt="Pessoa feliz usando óculos"
+          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+          alt="Pessoa sorrindo usando óculos"
           className="w-full h-full object-cover opacity-10"
         />
       </div>
