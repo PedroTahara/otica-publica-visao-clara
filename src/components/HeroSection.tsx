@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -28,15 +29,24 @@ const HeroSection = () => {
             O programa Ótica Pública tem como missão promover acesso a óculos e cuidados visuais para todos, 
             garantindo que todas as pessoas possam enxergar o mundo com clareza.
           </p>
-          <Button 
-            size="lg" 
-            className="text-lg animate-fade-in" 
+          <div 
+            className="flex flex-wrap gap-4 justify-center animate-fade-in" 
             style={{
               animationDelay: '0.4s'
             }}
           >
-            Saiba mais
-          </Button>
+            <Button size="lg" className="text-lg">
+              Saiba mais
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg"
+              asChild
+            >
+              <Link to="/login">Área Administrativa</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
